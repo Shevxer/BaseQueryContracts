@@ -1,0 +1,15 @@
+# Compiler files
+cache/
+out/
+
+# Smart contractlibraries
+lib/
+
+# Ignores development broadcast logs
+broadcast/
+
+# Docs
+docs/
+
+# Dotenv file
+.env
