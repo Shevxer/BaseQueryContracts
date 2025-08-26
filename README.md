@@ -52,7 +52,6 @@ graph TB
     subgraph "Web3 Integration Layer"
         Wagmi[Wagmi Hooks]
         Viem[Viem Utilities]
-        Connectors[Wallet Connectors]
     end
     
     subgraph "External Services"
@@ -74,8 +73,7 @@ graph TB
     State --> Hooks
     Hooks --> Wagmi
     Wagmi --> Viem
-    Viem --> Connectors
-    Connectors --> RPC
+    Viem --> RPC
     RPC --> Base
     
     Hooks --> IPFS
