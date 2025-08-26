@@ -4,15 +4,16 @@ A decentralized Q&A platform built on Base blockchain with reputation-based gove
 
 ## Contract Addresses
 
-- **ReputationSystem**: [`0xeA8e3e5872E90E6437e6D836dEF8334f49F9e73f`](https://sepolia.basescan.org/address/0xeA8e3e5872E90E6437e6D836dEF8334f49F9e73f)
 - **BaseQuery**: [`0x37c98fC6109a79A2e6ade5719213f526D346B033`](https://sepolia.basescan.org/address/0x37c98fC6109a79A2e6ade5719213f526D346B033)
+- **ReputationSystem**: [`0xeA8e3e5872E90E6437e6D836dEF8334f49F9e73f`](https://sepolia.basescan.org/address/0xeA8e3e5872E90E6437e6D836dEF8334f49F9e73f)
+
 
 ## Architecture Overview
 
 The system consists of three main smart contracts:
 
-- **`ReputationSystem.sol`**: Manages user reputation scores and voting mechanics
 - **`BaseQuery.sol`**: Main platform logic for questions, answers, and rewards
+- **`ReputationSystem.sol`**: Manages user reputation scores and voting mechanics
 - **`MockUSDC.sol`**: Mock USDC contract for local testing
 
 ## Core Features
@@ -37,7 +38,6 @@ The system consists of three main smart contracts:
 - **Pool Questions**: Weighted distribution based on vote scores (upvotes - downvotes)
   - Only answers with positive scores receive rewards
   - Distribution is proportional to individual answer scores
-  - Maximum 3 winners per pool question
 
 ## Frontend Integration Architecture
 
